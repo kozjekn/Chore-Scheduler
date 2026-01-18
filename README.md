@@ -74,4 +74,4 @@ services:
       - .env
     restart: always
 ```
-> Note that `creds.json` file should to be created form [Google Cloud Console](https://console.cloud.google.com/welcome?project=protean-chassis-476607-n8) (look up at docs for more info) 
+> Note that `creds.json` file should to be created from [Google Cloud Console](https://console.cloud.google.com/welcome?project=protean-chassis-476607-n8) (look up at docs for more info) 
