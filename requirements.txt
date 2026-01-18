@@ -1,0 +1,7 @@
+apscheduler
+fastapi
+uvicorn
+gspread
+pydantic
+python-multipart
+python-dotenv

@@ -1,0 +1,5 @@
+.env
+creds.json
+.vscode
+__pycache__
+frontend/package-lock.json

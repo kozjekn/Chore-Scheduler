@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: chore-app
+    ports:
+      - "8000:8000"
+    # Load secrets from the backend .env file
+    env_file:
+      - ./.env 
+    volumes:
+      # Mount creds so you can update them without rebuilding
+      - ./creds.json:/app/creds.json
+    restart: always
