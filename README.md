@@ -64,7 +64,7 @@ This is simple house chore scheduler with Google Sheets as database for home tas
 version: '3.8'
 services:
   app:
-    image: nejc198/chore-manager:latest
+    image: nejek16/chore-manager:latest
     container_name: chore-app
     ports:
       - "8000:8000"
