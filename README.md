@@ -56,7 +56,7 @@ This is simple house chore scheduler with Google Sheets as database for home tas
    ```
 2. Push to Docker Hub
    ```
-   docker push nejc198/chore-manager:latest
+   docker push nejek16/chore-manager:latest
    ```
 
 ### Docker Compose Example

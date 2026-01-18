@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  app:
+    image: nejek16/chore-manager:latest
+    container_name: chore-app
+    volumes:
+      - ./creds.json:/app/creds.json
+    env_file:
+      - .env
+    networks:
+      - traefik-net 
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.chores.rule=Host(`chores.domain.change.me`)"
+      - "traefik.http.routers.chores.entrypoints=websecure"
+      - "traefik.http.routers.chores.tls.certresolver=myresolver"
+      - "traefik.http.services.chores.loadbalancer.server.port=8000"
+    restart: always
+networks:
+  traefik-net:
+    external: true
